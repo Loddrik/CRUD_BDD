@@ -23,9 +23,7 @@ if($resultado1 && $resultado2 ){
   <form action="createCliente-infoEjercicios.php" method="POST">
   <div class="form">
 
-    <?php 
-    include_once 'ejercicios.php';
-    ?>
+    
   </div>
 
   <br />
