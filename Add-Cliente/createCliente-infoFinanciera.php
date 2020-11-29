@@ -41,6 +41,38 @@ if($resultado){
       <input type="text" name ="deuda" class="form-control" placeholder="Deuda del cliente">
     </div>
 
+    <br/>
+
+    <h2>Seleccione un entrenador</h2>
+    <?php
+      $query = pg_query($dbconn3," SELECT id_entrenador, nombre_entrenador FROM entreanador;");
+      $indice = 0;
+    ?>
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id Entrenador</th>
+                <th scope="col">Nombre Entrenador</th>
+            </tr>
+        </thead>
+    <tbody>
+      <?php
+        while ($row = pg_fetch_row($query)) {
+            $indice ++;
+            ?>
+            <tr>
+                <td><?php echo $row[0]; ?></td>
+                <td><?php echo $row[1]; ?></td>
+                <
+            </tr>
+        <?php
+        }
+        ?> 
+    </tbody>
+    </table>
+
+
     <div class="col">
       <input type="text" name ="cliente_entrenador" class="form-control" placeholder="Id del entrenador a cargo">
     </div>

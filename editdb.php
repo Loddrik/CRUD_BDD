@@ -7,7 +7,7 @@ include_once 'header.php';
 
 <ul class="nav bg-dark justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" href="Add-Cliente/add.php">Create</a>
+    <a class="nav-link active" href="add.php">Create</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Replace</a>
