@@ -11,10 +11,13 @@ include_once 'header.php';
     <a class="nav-link" href="Add-Entrenador/createEntrenador.php">Entrenador</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="createSala.php">Sala</a>
+    <a class="nav-link" href="Add-Sala/createSala.php">Sala</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " href="createImplemento.php">Implemento</a>
+    <a class="nav-link " href="Add-Implemento/createImplemento.php">Implemento</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="Add-Ejercicio/createEjercicio.php">Ejercicio</a>
   </li>
 </ul>
 
