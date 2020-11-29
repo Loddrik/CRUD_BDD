@@ -22,19 +22,19 @@ if($resultado1 && $resultado2 ){
 
   <form action="createCliente-infoEjercicios.php" method="POST">
   <div class="form">
-   <?php 
-   include_once 'ejercicios.php';
-   ?>
-  
+
+    <?php 
+    include_once 'ejercicios.php';
+    ?>
   </div>
+
   <br />
+
   <button type="submit"  class="btn btn-primary">Consultar</button>
 </form>
 
 <?php
 } else{
-?> 
-
-<?php
+  echo "<h2>Ha ocurrido un error...</h2>";
 }
 ?>

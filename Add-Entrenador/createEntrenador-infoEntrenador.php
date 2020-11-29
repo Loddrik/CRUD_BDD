@@ -17,26 +17,27 @@ $resultado = $sentencia->execute([$id,$nombre,$rut,$telefono,$direccion,$mail,$e
 #Con eso podemos evaluar
 
 if($resultado){
-?>
-<h1> Informacion del entrenador</h1>
-<br/>
-<form action="createEntrenador-response.php" method="POST">
-  <div class="form">
-    <div class="col">
-      <input type="hidden" name ="id" class="form-control" value=<?php echo $id?>>
-    </div>
 
-    <div class="col">
-      <input type="text" name ="salario" class="form-control" placeholder="Salario">
-    </div>
+  ?>
+  <h1> Informacion del entrenador</h1>
+  <br/>
+  <form action="createEntrenador-response.php" method="POST">
+    <div class="form">
+      <div class="col">
+        <input type="hidden" name ="id" class="form-control" value=<?php echo $id?>>
+      </div>
 
-    <div class="col">
-      <input type="text" name ="especialidad" class="form-control" placeholder="Especialidad">
+      <div class="col">
+        <input type="text" name ="salario" class="form-control" placeholder="Salario">
+      </div>
+
+      <div class="col">
+        <input type="text" name ="especialidad" class="form-control" placeholder="Especialidad">
+      </div>
     </div>
-  </div>
-  <br />
-  <button type="submit"  class="btn btn-primary">Consultar</button>
-</form>
+    <br />
+    <button type="submit"  class="btn btn-primary">Consultar</button>
+  </form>
 
 <?php
 }else{

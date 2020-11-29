@@ -21,7 +21,7 @@ include_once '../conexion2.php';
 
     <hr />
 
-
+  </div>
   <br />
   <button type="submit"  class="btn btn-primary">Consultar</button>
 </form>

@@ -22,82 +22,68 @@ $resultado = $sentencia->execute([$id,$nombre,$rut,$telefono,$direccion,$mail,$e
 
 
 if($resultado){
-    ?>
-    <h1> Informacion financiera y del gimnasio</h1>
-<br/>
-<form action="createCliente-infoPlan.php" method="POST">
-  <div class="form">
-    
 
-    <div class="col">
-      <input type="hidden" name ="id" value=<?php echo $id?> class="form-control" >
-    </div>
+  ?>
+  <h1> Informacion financiera y del gimnasio</h1>
+  <br/>
+  <form action="createCliente-infoPlan.php" method="POST">
+    <div class="form">
+      <div class="col">
+        <input type="hidden" name ="id" value=<?php echo $id?> class="form-control" >
+      </div>
 
-    <div class="col">
-      <input type="text" name ="mensualidad" class="form-control" placeholder="Mensualidad cliente">
-    </div>
+      <div class="col">
+        <input type="text" name ="mensualidad" class="form-control" placeholder="Mensualidad cliente">
+      </div>
 
-    <div class="col">
-      <input type="text" name ="deuda" class="form-control" placeholder="Deuda del cliente">
-    </div>
+      <div class="col">
+        <input type="text" name ="deuda" class="form-control" placeholder="Deuda del cliente">
+      </div>
 
-    <br/>
+      <br/>
 
-    <h2>Seleccione un entrenador</h2>
-    <?php
-      $query = pg_query($dbconn3," SELECT id_entrenador, nombre_persona FROM entrenador,persona where entrenador.id_entrenador = persona.id_persona;");
-      $indice = 0;
-    ?>
+      <h2>Seleccione un entrenador</h2>
+      <?php
+        $query = pg_query($dbconn3," SELECT id_entrenador, nombre_persona FROM entrenador,persona where entrenador.id_entrenador = persona.id_persona;");
+        $indice = 0;
+      ?>
       <table class="table">
         <thead>
-            <tr>
-                <th scope="col">Id Entrenador</th>
-                <th scope="col">Nombre Entrenador</th>
-            </tr>
+          <tr>
+            <th scope="col">Id Entrenador</th>
+            <th scope="col">Nombre Entrenador</th>
+          </tr>
         </thead>
-    <tbody>
-      <?php
-        while ($row = pg_fetch_row($query)) {
-            $indice ++;
-            ?>
-            <tr>
+        <tbody>
+          <?php
+            while ($row = pg_fetch_row($query)) {
+              $indice ++;
+              ?>
+              <tr>
                 <td><?php echo $row[0]; ?></td>
-                <td><?php echo $row[1]; ?></td>
-                
-            </tr>
-        <?php
-        }
-        ?> 
-    </tbody>
-    </table>
+                <td><?php echo $row[1]; ?></td> 
+              </tr>
+              <?php
+            }
+              ?> 
+        </tbody>
+      </table>
 
 
-    <div class="col">
-      <input type="text" name ="cliente_entrenador" class="form-control" placeholder="Id del entrenador a cargo">
-    </div>
+      <div class="col">
+        <input type="text" name ="cliente_entrenador" class="form-control" placeholder="Id del entrenador a cargo">
+      </div>
 
-    <div class="col">
-      <input type="text" name ="id_plan" class="form-control" placeholder="Id del nuevo plan">
-    </div>
-
-    <hr/>
-    
-  
-    
-    
-    
-
-    
-
-  <br />
-  <button type="submit"  class="btn btn-primary">Consultar</button>
-</form>
-<?php
-
+      <div class="col">
+        <input type="text" name ="id_plan" class="form-control" placeholder="Id del nuevo plan">
+      </div>
+      <hr/>
+      <br />
+      <button type="submit"  class="btn btn-primary">Consultar</button>
+  </form>
+  <?php 
 } else{
     echo "Inputs incorrectos";
 }
-
-
 ?>
 

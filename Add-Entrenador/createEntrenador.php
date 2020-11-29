@@ -34,10 +34,8 @@ include_once '../conexion2.php';
     <div class="col">
       <input type="number" name ="edad" class="form-control" placeholder="Edad">
     </div>
-
-    <hr />
-
-
+  </div>
+  <hr />
   <br />
   <button type="submit"  class="btn btn-primary">Consultar</button>
 </form>
