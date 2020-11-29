@@ -3,6 +3,7 @@
     $indice = 0;
     $query = pg_query($dbconn3," SELECT ejercicio.id_ejercicio, ejercicio.nombre_ejercicio, ejercicio.descripcion_ejercicio FROM ejercicio");
     ?>
+    
     <form action="caca.php" method="POST">
     <table class="table">
         <thead>
@@ -21,13 +22,13 @@
             $indice ++;
             ?>
             <tr>
-                <td><input type="checkbox" name= <?php echo $row[1] ?> ></td>
+                <td><input type="checkbox" name= <?php echo $row[0] ?> value = <?php echo $row[0] ?>></td>
                 <!-- En la linea de arriba verificar si funciona sin las comillas -->
                 <td><?php echo $row[0]; ?></td>
                 <td><?php echo $row[1]; ?></td>
-                <td><input type="number" name=<?php echo "series_" . $row[1]?>  />  </td>
-                <td><input type="number" name=<?php echo "repeticion_" . $row[1]?>/></td>
-                <td><input name = <?php echo "tiempo_" . $row[1]?>/></td>
+                <td><input type="number" name=<?php echo "series_" . $row[0]?>  />  </td>
+                <td><input type="number" name=<?php echo "repeticion_" . $row[0]?> /> </td>
+                <td><input type="text" name =<?php echo "tiempo_" . $row[0]?>/></td>
             </tr>
         <?php
         }
