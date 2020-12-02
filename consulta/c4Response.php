@@ -39,7 +39,7 @@ $query = pg_query($dbconn3,"select * from plan order by dificultad_plan" );
     </tbody>
 </table>
 
-<button onclick="history.back()"> Volver</button>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
 <?php
 include_once '../footer.php';
 ?>

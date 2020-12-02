@@ -1,11 +1,11 @@
 <?php
-include_once '../header.php';
+include_once '../header2.php';
 include_once '../conexion.php';
 
 // $consulta = "select "
 ?>
 
-<p> En este apartado debe seleccionar dificultad y frecuencia</p>
+<h3> En este apartado debe seleccionar dificultad y frecuencia</h3>
 
 <form action="c1Response.php" method="get">
   <div class="form-row">
@@ -19,16 +19,10 @@ include_once '../conexion.php';
   <br />
   <button type="submit"  class="btn btn-primary">Consultar</button>
 </form>
-<br />
-<button onclick="history.back()"> Volver</button>
-<!-- <?php
-// header('Location: /c1Response.php')
-?> -->
-<!-- 
-<form>
-    <label for="fname">First name</label>
-</form>
-<button type="sumbit" formaction=""></button -->
+<br>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
+
 <?php
+
 include_once '../footer.php';
-?>
+?>>

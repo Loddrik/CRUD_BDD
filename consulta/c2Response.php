@@ -34,7 +34,7 @@ id_cliente = persona . id_persona and persona . edad_persona > $1", array($edad)
     </tbody>
 </table>
 
-<button onclick="history.back()"> Volver</button>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
 <?php
 include_once '../footer.php';
 ?>

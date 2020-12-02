@@ -1,7 +1,7 @@
 <?php
 $contraseña = "hermosilla123";
 $usuario = "postgres";
-$nombreBaseDeDatos = "GYM";
+$nombreBaseDeDatos = "GYMFINAL";
 # Puede ser 127.0.0.1 o el nombre de tu equipo; o la IP de un servidor remoto
 $rutaServidor = "localhost";
 $puerto = "5432";

@@ -36,7 +36,7 @@ implemento . id_implemento and plan_ejercicio . id_plan = $1; ", array($id));
     </tbody>
 </table>
 
-<button onclick="history.back()"> Volver</button>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
 <?php
 include_once '../footer.php';
 ?>

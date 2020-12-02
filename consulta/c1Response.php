@@ -34,7 +34,7 @@ $query = pg_query_params($dbconn3,"SELECT nombre_plan FROM plan WHERE dificultad
     </tbody>
 </table>
 
-<button onclick="history.back()"> Volver</button>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
 
 <?php
 include_once '../footer.php';

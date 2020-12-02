@@ -16,7 +16,7 @@ include_once 'header.php';
     <a class="nav-link" href="Update/update.php">Update</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " href="#">Delete</a>
+    <a class="nav-link " href="delete.php">Delete</a>
   </li>
 </ul>
 
@@ -24,4 +24,4 @@ include_once 'header.php';
 
 <?php
 include_once 'footer.php';
-?>
+?>>

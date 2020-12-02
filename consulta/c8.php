@@ -18,14 +18,7 @@ include_once '../conexion.php';
 </form>
 <br />
 <button onclick="history.back()"> Volver</button>
-<!-- <?php
-// header('Location: /c1Response.php')
-?> -->
-<!-- 
-<form>
-    <label for="fname">First name</label>
-</form>
-<button type="sumbit" formaction=""></button -->
+
 <?php
 include_once '../footer.php';
 ?>

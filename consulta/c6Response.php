@@ -35,7 +35,7 @@ plan_ejercicio . series is null ");
     </tbody>
 </table>
 
-<button onclick="history.back()"> Volver</button>
+<button class="btn btn-primary" onclick="history.back()"> Volver</button>
 <?php
 include_once '../footer.php';
 ?>
